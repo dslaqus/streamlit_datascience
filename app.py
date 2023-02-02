@@ -23,15 +23,19 @@ np.random.seed(123)
 def test_app(text):
     return text
 
-dic = {
-    'David Perna': "Especialista de crédito e de cachaça",
-    'Frederico Nunes': "Minerador de dados e mineiro",
-    'Tharick Souza': "Engenheiro de dados e paulista mestiço",
-    'Bruno Vitti': "Cientista de dados e cervejeiro"
-}
+n1 = 'David Perna'
+d1 = "Especialista de crédito e de cachaça"
 
-indexes = [0,1,2,3]
-df = pd.DataFrame(dic, index=indexes)
+n2 = 'Frederico Nunes'
+d2 = "Minerador de dados e mineiro"
+
+n3 = 'Tharick Souza'
+d3 = "Engenheiro de dados e paulista mestiço"
+
+n4 = 'Bruno Vitti'
+d4 = "Cientista de dados e cervejeiro"
+
+
 
 # Set the app title
 st.title("Time de Data Science")
@@ -49,4 +53,7 @@ if submit:
  
     # Display results of the NLP task
     st.header("Results")
-    st.write(df)
+    st.write(n1, d1)
+    st.write(n2, d2)
+    st.write(n3, d3)
+    st.write(n4, d4)
