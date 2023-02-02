@@ -30,6 +30,8 @@ dic = {
     'Bruno Vitti': "Cientista de dados e cervejeiro"
 }
 
+df = pd.DataFrame(dic)
+
 # Set the app title
 st.title("Time de Data Science")
 st.write(
