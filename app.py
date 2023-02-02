@@ -44,12 +44,12 @@ st.write(
 )
 # Declare a form to receive a movie's review
 form = st.form(key="my_form")
-review = form.text_input(label="Insira o teu nome para conhhecer o time de Data Science da Laqus")
+# review = form.text_input(label="Insira o teu nome para conhhecer o time de Data Science da Laqus")
 submit = form.form_submit_button(label="Enter")
 
 if submit:
     # make prediction from the input text
-    result = test_app(review)
+    # result = test_app(review)
  
     # Display results of the NLP task
     st.header("Results")
