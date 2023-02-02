@@ -53,7 +53,7 @@ if submit:
  
     # Display results of the NLP task
     st.header("Results")
-    st.write(n1, d1)
-    st.write(n2, d2)
-    st.write(n3, d3)
-    st.write(n4, d4)
+    st.write(n1,":  ", d1)
+    st.write(n2,":  ", d2)
+    st.write(n3,":  ", d3)
+    st.write(n4,":  ", d4)
