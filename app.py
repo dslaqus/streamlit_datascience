@@ -42,13 +42,12 @@ st.title("Time de Data Science")
 st.write(
     """
     Criação de webapps corporativas com python\n
-    Insira o teu nome para conhhecer o time de Data Science da Laqus
     """
 )
 # Declare a form to receive a movie's review
 form = st.form(key="my_form")
 # review = form.text_input(label="Insira o teu nome para conhhecer o time de Data Science da Laqus")
-submit = form.form_submit_button(label="Enter")
+submit = form.form_submit_button(label="Conhecer o time de Data Science da Laqus")
 
 if submit:
     # make prediction from the input text
