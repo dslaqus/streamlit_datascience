@@ -23,16 +23,21 @@ np.random.seed(123)
 def test_app(text):
     return text
 
-df = pd.DataFrame({'Teste':'A'}, index=[0])
+dic = {
+    'David Perna': "Especialista de crédito e de cachaça",
+    'Frederico Nunes': "Minerador de dados e mineiro",
+    'Tharick Souza': "Engenheiro de dados e paulista mestiço",
+    'Bruno Vitti': "Cientista de dados e cervejeiro"
+}
 
 # Set the app title
-st.title("Python - Streamlit")
+st.title("Time de Data Science")
 st.write(
-    "A simple web app with streamlit"
+    "Criação de webapps corporativas com python"
 )
 # Declare a form to receive a movie's review
 form = st.form(key="my_form")
-review = form.text_input(label="Enter any text message")
+review = form.text_input(label="Insira o teu nome para conhhecer o time de Data Science da Laqus")
 submit = form.form_submit_button(label="Enter")
 
 if submit:
