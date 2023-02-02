@@ -40,7 +40,10 @@ d4 = "Cientista de dados e cervejeiro"
 # Set the app title
 st.title("Time de Data Science")
 st.write(
-    "Criação de webapps corporativas com python"
+    """
+    Criação de webapps corporativas com python\n
+    Insira o teu nome para conhhecer o time de Data Science da Laqus
+    """
 )
 # Declare a form to receive a movie's review
 form = st.form(key="my_form")
