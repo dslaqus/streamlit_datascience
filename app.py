@@ -30,7 +30,8 @@ dic = {
     'Bruno Vitti': "Cientista de dados e cervejeiro"
 }
 
-df = pd.DataFrame(dic)
+indexes = [0,1,2,3]
+df = pd.DataFrame(dic, index=indexes)
 
 # Set the app title
 st.title("Time de Data Science")
