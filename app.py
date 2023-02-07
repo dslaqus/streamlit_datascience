@@ -21,7 +21,7 @@ s3 = S3FileSystem(anon=False)
 key = 'DadosNotion/DadosNotion_11_1_2023.csv'
 bucket = 'data-science-laqus'
 
-# df = pd.read_csv(s3.open(f'{bucket}/{key}', mode='rb')).drop(columns='Unnamed: 0')
+df = pd.read_csv(s3.open(f'{bucket}/{key}', mode='rb')).drop(columns='Unnamed: 0')
 
 
 
@@ -76,4 +76,4 @@ if submit:
     st.write(n2,":  ", d2)
     st.write(n3,":  ", d3)
     st.write(n4,":  ", d4)
-    # st.write(df)
+    st.write(df)
